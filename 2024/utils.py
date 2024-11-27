@@ -1,8 +1,8 @@
 import os
 
 def read_input(year: int, day: int, input_file_name="input.txt"):
-    """Reads input file for the given year and day (year/DayX/input.txt)."""
-    file_path = os.path.join(os.getcwd(), input_file_name)
+    
+    file_path = os.path.join(os.getcwd(),f"{year}/Day{day}", input_file_name)
     
     try:
         with open(file_path, 'r') as f:
